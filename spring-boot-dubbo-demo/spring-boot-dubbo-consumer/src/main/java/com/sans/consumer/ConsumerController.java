@@ -20,6 +20,8 @@ public class ConsumerController {
     // Dubbo远程调用注解
     @Reference
     private IProviderService providerService;
+
+
     @RequestMapping(value = "/list",method = RequestMethod.GET)
     public ResultVO getList(){
         // 远程调用
